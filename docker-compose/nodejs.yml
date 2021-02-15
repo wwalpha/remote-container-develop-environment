@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  local:
+    container_name: nodejs-env
+    # run docker command inside container
+    privileged: true
+    # base image
+    image: test
+    # run in background
+    tty: true
+    # forward port
+    ports:
+      - 3000:3000
+      - 8080:8080
