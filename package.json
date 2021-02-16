@@ -1,0 +1,11 @@
+{
+  "name": "remote-container-develop-enviroment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wwalpha/remote-container-develop-environment.git",
+  "author": "wwalpha <wwalpha@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:nodejs": "docker build -t node-env -f ./docker-build/nodejs/Dockerfile ."
+  }
+}

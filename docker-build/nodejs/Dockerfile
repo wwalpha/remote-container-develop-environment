@@ -1,7 +1,7 @@
 FROM amazonlinux
 
 # commons
-RUN yum install -y unzip jq && \
+RUN yum install -y git unzip jq && \
   # node.js
   curl -sL https://rpm.nodesource.com/setup_14.x | bash - && \
   yum install -y nodejs && node -v && \
